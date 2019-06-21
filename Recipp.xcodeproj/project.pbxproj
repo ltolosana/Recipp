@@ -10,6 +10,8 @@
 		60E6C19222BD597200214525 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E6C19122BD597200214525 /* AppDelegate.swift */; };
 		60E6C19922BD597300214525 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60E6C19822BD597300214525 /* Assets.xcassets */; };
 		60E6C19C22BD597300214525 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60E6C19A22BD597300214525 /* LaunchScreen.storyboard */; };
+		60E6C1B222BD63F500214525 /* RecipeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E6C1B122BD63F500214525 /* RecipeTests.swift */; };
+		60E6C1B522BD65A400214525 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E6C1B422BD65A400214525 /* Recipe.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,6 +32,8 @@
 		60E6C19D22BD597300214525 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		60E6C1A222BD597400214525 /* RecippTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RecippTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		60E6C1A822BD597400214525 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		60E6C1B122BD63F500214525 /* RecipeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeTests.swift; sourceTree = "<group>"; };
+		60E6C1B422BD65A400214525 /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +75,7 @@
 		60E6C19022BD597200214525 /* Recipp */ = {
 			isa = PBXGroup;
 			children = (
+				60E6C1B322BD658200214525 /* Domain */,
 				60E6C19122BD597200214525 /* AppDelegate.swift */,
 				60E6C19822BD597300214525 /* Assets.xcassets */,
 				60E6C19A22BD597300214525 /* LaunchScreen.storyboard */,
@@ -83,8 +88,17 @@
 			isa = PBXGroup;
 			children = (
 				60E6C1A822BD597400214525 /* Info.plist */,
+				60E6C1B122BD63F500214525 /* RecipeTests.swift */,
 			);
 			path = RecippTests;
+			sourceTree = "<group>";
+		};
+		60E6C1B322BD658200214525 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				60E6C1B422BD65A400214525 /* Recipe.swift */,
+			);
+			path = Domain;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,6 +154,7 @@
 					};
 					60E6C1A122BD597300214525 = {
 						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1020;
 						TestTargetID = 60E6C18D22BD597200214525;
 					};
 				};
@@ -188,6 +203,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				60E6C19222BD597200214525 /* AppDelegate.swift in Sources */,
+				60E6C1B522BD65A400214525 /* Recipe.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,6 +211,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60E6C1B222BD63F500214525 /* RecipeTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -375,6 +392,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = RecippTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -384,6 +402,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = io.tolosana.RecippTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Recipp.app/Recipp";
@@ -395,6 +414,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = RecippTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
