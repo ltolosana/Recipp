@@ -8,11 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		60E6C19222BD597200214525 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E6C19122BD597200214525 /* AppDelegate.swift */; };
-		60E6C19422BD597200214525 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E6C19322BD597200214525 /* ViewController.swift */; };
-		60E6C19722BD597200214525 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60E6C19522BD597200214525 /* Main.storyboard */; };
 		60E6C19922BD597300214525 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60E6C19822BD597300214525 /* Assets.xcassets */; };
 		60E6C19C22BD597300214525 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60E6C19A22BD597300214525 /* LaunchScreen.storyboard */; };
-		60E6C1A722BD597400214525 /* RecippTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E6C1A622BD597400214525 /* RecippTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,13 +25,10 @@
 /* Begin PBXFileReference section */
 		60E6C18E22BD597200214525 /* Recipp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Recipp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		60E6C19122BD597200214525 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		60E6C19322BD597200214525 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		60E6C19622BD597200214525 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		60E6C19822BD597300214525 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		60E6C19B22BD597300214525 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		60E6C19D22BD597300214525 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		60E6C1A222BD597400214525 /* RecippTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RecippTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		60E6C1A622BD597400214525 /* RecippTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecippTests.swift; sourceTree = "<group>"; };
 		60E6C1A822BD597400214525 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -78,8 +72,6 @@
 			isa = PBXGroup;
 			children = (
 				60E6C19122BD597200214525 /* AppDelegate.swift */,
-				60E6C19322BD597200214525 /* ViewController.swift */,
-				60E6C19522BD597200214525 /* Main.storyboard */,
 				60E6C19822BD597300214525 /* Assets.xcassets */,
 				60E6C19A22BD597300214525 /* LaunchScreen.storyboard */,
 				60E6C19D22BD597300214525 /* Info.plist */,
@@ -90,7 +82,6 @@
 		60E6C1A522BD597400214525 /* RecippTests */ = {
 			isa = PBXGroup;
 			children = (
-				60E6C1A622BD597400214525 /* RecippTests.swift */,
 				60E6C1A822BD597400214525 /* Info.plist */,
 			);
 			path = RecippTests;
@@ -179,7 +170,6 @@
 			files = (
 				60E6C19C22BD597300214525 /* LaunchScreen.storyboard in Resources */,
 				60E6C19922BD597300214525 /* Assets.xcassets in Resources */,
-				60E6C19722BD597200214525 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,7 +187,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				60E6C19422BD597200214525 /* ViewController.swift in Sources */,
 				60E6C19222BD597200214525 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -206,7 +195,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				60E6C1A722BD597400214525 /* RecippTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,14 +209,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		60E6C19522BD597200214525 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				60E6C19622BD597200214525 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		60E6C19A22BD597300214525 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
